@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>TODO</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel='stylesheet' type='text/css' href="jquery-ui.css"/>
+    <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+    <link rel='stylesheet' type='text/css' href='jquery-ui.min.css'/>
+    <link rel='stylesheet' type='text/css' href='jquery-ui.theme.css'/>
+</head>
+
+<body>
+
+	<div class = "borderWrapper">
+
+		<h3 id = "heading">
+			YOU CAN [PROBABLY] DO IT 2.22
+		</h3>
+		
+		<div id = "contentWrapper">
+			<div id = "toDoWrapper">
+
+				<div id = "toDoInput">
+					<strong>ToDo:</strong> 
+					<input type="text" id="ToDo"/>
+				</div>
+
+				<div id = "buttonLayout">
+					<div id = "submitBtnDiv">
+						<button id="toDoSubmit">Submit</button>
+					</div>
+					
+					<div id = "todoCheckBtnsDiv">
+						<button id="toDoCheckAllBtn">Check All</button>
+						<button id="toDoUncheckAllBtn">Uncheck All</button>
+					</div>
+					
+					<div id = "completeBtnDiv">
+						<button id="completeCheckedBtn">Complete Checked</button>
+					</div>
+				</div>
+
+				<ol class = "sortable" id="list">
+					
+				</ol>
+			</div>
+
+			<div id = "recentlyCompletedWrapper">
+				<button id = "RCtoggle">Embiggen</button>
+				<div id = "RCcontent">
+					<div id = "buttonLayout">
+						<div id = "RCcheckBtnsDiv">
+							<button id="RCcheckAllBtn">Check All</button>
+							<button id="RCuncheckAllBtn">Uncheck All</button>
+						</div>
+
+						
+					</div>
+					<ol class = "sortable" id = "recentlyCompletedTasks">
+					
+					</ol>
+
+					<div id = "RDdeleteBtnDiv">
+							<button id="restoreButton">Restore Checked</button>
+							<button id="emptyButton">Delete Checked</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- 	<div id = "infoWrapper">
+		<button id="infoBtn">Info</button>
+		<p>
+			Double-click to edit items!
+			</br>
+			Drag and drop to rearrange!
+			</br>
+			Add items and press enter!
+			</br>
+			Clear a bunch of items you [probably] didn't actually do!
+			</br>
+		</p>
+		<h4>Created by: CF</h4>
+	</div> -->
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src='jquery-ui.min.js'></script>
+	<script src="main.js"></script>
+
+
+</body>
+</html>
