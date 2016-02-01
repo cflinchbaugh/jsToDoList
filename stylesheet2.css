@@ -1,113 +1,27 @@
-
-body {
-	background-color: #E8E8E8;
-}
-
-h3 {
-	margin-bottom: auto;
-}
-
 li {
 	color: black;
-	font: italic bold 12px/30px Georgia, serif;
+	font: bold 12px/30px Georgia, serif;
+}
+
+ol {
+	padding-left: 0px;
 }
 
 button {
-	border-radius:25px;
+	border-radius: 25px;
 }
 
-.center{
-	text-align: center;
+#toDoInput{
+	padding: 20px;
 }
 
-#list .chk {
-	position: absolute;
-	margin-left: -172px;
+#buttonLayout > div{
 	margin-top: 10px;
 }
 
-#RCID {
-	background-color: transparent;
-  	border-color: transparent;
-  	width: 26px;
-  	display: inline;
-  	float: left;
-  	margin-left: -51px;
-}
-
-/*#recentlyCompletedTasks .chk {
-	position: absolute;
-	margin-left: -74px;
-	margin-top: -68px;
-}*/
-#recentlyCompletedWrapper button {
-	margin-top: 5px;
-}
-
-.borderWrapper {
-	float: left;
-	display: inline;
-	width: 45%;
-	margin-top: 5%;
-	margin-left: 27.5%;
-	border-radius: 15px;
-	background-color: white;
-	box-shadow: 10px 10px 15px #888888;
-}
-
-#heading {
-	display:inline;
-	float:left;
-	width:60%;
-}
-
-#heading {
-	display:inline;
-	float:left;
-	width:60%;
-	padding-left: 20%;
-}
-
-#contentWrapper {
-	display:inline;
-	float:left;
-	width:85%;
-	padding-left: 10%;
-	margin-bottom:5%;
-}
-
-#heading, #toDoInput, #buttonLayout {
-	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 5px;
-}
-
-#toDoSubmit, #completeCheckedBtn, #toDoCheckAllBtn, #toDoUncheckAllBtn, #RCcheckAllBtn, #RCuncheckAllBtn, #emptyButton {
-	margin-top: 2.5px;
-	margin-bottom: 2.5px;
-}
-
-#toDoSubmit, #completeCheckedBtn {
-	width: 80%;
-}
-
-#restoreButton, #emptyButton {
-	width:80%;
-	margin-left:10%;
-}
-
-#toDoCheckAllBtn, #toDoUncheckAllBtn {
-	width: 40%
-}
-
- #RCcheckAllBtn, #RCuncheckAllBtn {
- 	width: 121px;
- }
-
-#completeID {
+#completeID, #RCID {
 	border: none;
   	background-color: transparent;
-  	width: 100%;
 }
 
 #toDoWrapper, #recentlyCompletedWrapper, #deleteWrapper{
@@ -120,47 +34,30 @@ button {
 	display:inline;
 }
 
-#toDoWrapper {
-	width: 88%;
-}
-
 #list {
 	min-height:20px;
 	border: solid;
-	width:73%;
-	margin-left:8%;
-	margin-bottom: 20px;
 	border-radius: 10px;
 	color: white;
-	box-shadow: 05px 05px 15px #888888;
-}
-
-.listClass {
-	max-width: 235px;
-	border-radius: 0px;
-}
-
- #recentlyCompletedTasks li {
-	margin-left: -7px !important;
+	/*box-shadow: 05px 05px 15px #888888;*/
 }
 
 #recentlyCompletedTasks {
-		min-height:20px;
+	min-height:20px;
 	border: solid;
-	width:80px;
-	margin-left:8%;
+/*	margin-left:8%;*/
 	margin-bottom: 20px;
 	border-radius: 10px;
 	color: white;
-	box-shadow: 05px 05px 15px #888888;
+	/*box-shadow: 05px 05px 15px #888888;*/
 }
 
 #recentlyCompletedWrapper {
-	position: absolute;
-	margin-top: -58px;
-	margin-left:7%;
+/*	position: absolute;*/
+/*	margin-top: -58px;
+	margin-left:7%;*/
 	height:auto;
-	width:150px;
+/*	width:150px;*/
 	background-color:white;
 	z-index: 2;
 
@@ -169,6 +66,7 @@ button {
     	transform: scale(1,1); /* Standard syntax */ 
 }
 
+
 #RCtoggle {
 	max-width: 100px;
 	    -moz-transform: none;
@@ -176,15 +74,6 @@ button {
     -o-transform: none;
     transform: none;
     scale: none;
-}
-
-#RCcontent {
-	padding: 0;
-}
-
-#recentlyCompletedHeader
-	padding-top, padding-bottom: 0px;
-	text-align: center;
 }
 
 /*Drag and drop styling*/

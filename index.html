@@ -1,72 +1,72 @@
 <html>
 <head>
 	<title>TODO</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
 	<link rel='stylesheet' type='text/css' href="jquery-ui-1.11.4\jquery-ui.css"/>
-    <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+    <link rel='stylesheet' type='text/css' href='stylesheet2.css'/>
+	<link rel='stylesheet' type='text/css' href='common.css'/>
     <link rel='stylesheet' type='text/css' href='jquery-ui-1.11.4\jquery-ui.min.css'/>
     <link rel='stylesheet' type='text/css' href='jquery-ui-1.11.4\jquery-ui.theme.css'/>
+
+
 </head>
 
 <body>
+	<h3 id="heading" class="col-xs-12 center" >
+		YOU CAN [PROBABLY] DO IT 2.22
+	</h3>
+	
 
-	<div class = "borderWrapper">
-
-		<h3 id = "heading">
-			YOU CAN [PROBABLY] DO IT 2.22
-		</h3>
-		
-		<div id = "contentWrapper">
-			<div id = "toDoWrapper">
-
-				<div id = "toDoInput">
-					<strong>ToDo:</strong> 
-					<input type="text" id="ToDo"/>
-				</div>
-
-				<div id = "buttonLayout">
-					<div id = "submitBtnDiv">
-						<button id="toDoSubmit">Submit</button>
-					</div>
-					
-					<div id = "todoCheckBtnsDiv">
-						<button id="toDoCheckAllBtn">Check All</button>
-						<button id="toDoUncheckAllBtn">Uncheck All</button>
-					</div>
-					
-					<div id = "completeBtnDiv">
-						<button id="completeCheckedBtn">Complete Checked</button>
-					</div>
-				</div>
-
-				<ol class = "sortable" id="list">
-					
-				</ol>
+	<div id="contentWrapper" class="col-xs-12 col-sm-10 col-sm-offset-1">
+		<div id="toDoWrapper" class="col-xs-12 col-sm-8">
+			<div id="toDoInput" class="center">
+				<strong>ToDo:</strong> 
+				<input type="text" id="ToDo"/>
 			</div>
 
-			<div id = "recentlyCompletedWrapper">
-				<button id = "RCtoggle">Embiggen</button>
-				<div id = "RCcontent">
-					<div id = "buttonLayout">
-						<div id = "RCcheckBtnsDiv">
-							<button id="RCcheckAllBtn">Check All</button>
-							<button id="RCuncheckAllBtn">Uncheck All</button>
-						</div>
+			<div id="buttonLayout" class="center">
+				<div id="submitBtnDiv">
+					<button id="toDoSubmit">Submit</button>
+				</div>
+				
+				<div id="todoCheckBtnsDiv">
+					<button id="toDoCheckAllBtn">Check All</button>
+					<button id="toDoUncheckAllBtn">Uncheck All</button>
+				</div>
+				
+				<div id="completeBtnDiv">
+					<button id="completeCheckedBtn">Complete Checked</button>
+				</div>
+			</div>
 
-						
+			<ol id="list" class="sortable col-xs-12">
+				
+			</ol>
+		</div>
+
+		<div id="recentlyCompletedWrapper" class="col-xs-12 col-sm-3 col-sm-offset-1">
+			<button id="RCtoggle">Embiggen</button>
+			<div id="RCcontent">
+				<div id="buttonLayout">
+					<div id="RCcheckBtnsDiv">
+						<button id="RCcheckAllBtn">Check All</button>
+						<button id="RCuncheckAllBtn">Uncheck All</button>
 					</div>
-					<ol class = "sortable" id = "recentlyCompletedTasks">
+
 					
-					</ol>
+				</div>
+				<ol id="recentlyCompletedTasks" class="sortable">
+				
+				</ol>
 
-					<div id = "RDdeleteBtnDiv">
-							<button id="restoreButton">Restore Checked</button>
-							<button id="emptyButton">Delete Checked</button>
-					</div>
+				<div id="RDdeleteBtnDiv">
+						<button id="restoreButton" class="col-xs-12 col-sm-7">Restore</button>
+						<button id="emptyButton" class="col-xs-12 col-sm-4 col-sm-offset-1">Delete</button>
 				</div>
 			</div>
 		</div>
 	</div>
+
 
 <!-- 	<div id = "infoWrapper">
 		<button id="infoBtn">Info</button>
@@ -84,9 +84,10 @@
 	</div> -->
 
 
-
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src='jquery-ui-1.11.4\jquery-ui.min.js'></script>
+	<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.css">
+	<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 	<script src="main.js"></script>
 
 

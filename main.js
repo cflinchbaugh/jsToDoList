@@ -93,7 +93,7 @@ function addItem(toDoItem) {
         listItem = document.createElement("li");
     
     //Create container div
-    toDoItemDiv.className = "toDoItemDiv";
+    toDoItemDiv.className = "toDoItemDiv container-fluid";
 
     //Create Checkbox
     completeButtonText.type = "checkbox";
@@ -102,9 +102,10 @@ function addItem(toDoItem) {
     check.appendChild(completeButtonText);
 
     check.id = "completeID";
+    check.className = "col-xs-1";
 
     //Create the list item and add the appropriate attributes
-    listItem.className = "listClass";
+    listItem.className = "listClass col-xs-9";
     listItem.setAttribute('contenteditable', 'true');
     listItem.setAttribute('onDblclick', '$(this).focus();');
 
@@ -181,9 +182,10 @@ function addStoredRCItem(rcItem) {
     completeButtonText.setAttribute('readonly', 'true');
     check.appendChild(completeButtonText);
     check.id = "RCID";
+    check.className = "col-xs-1";
 
     //Create the list item and add the appropriate attributes
-    listItem.className = "listClass";
+    listItem.className = "listClass col-xs-9 col-xs-offset-1";
     listItem.setAttribute('contenteditable', 'true');
     listItem.setAttribute('onDblclick', '$(this).focus();');
 
@@ -227,7 +229,7 @@ $('#restoreButton').on("click", function() {
 
             //Update the class
             restoreMe.removeClass('rcItemDiv');
-            restoreMe.addClass('toDoItemDiv');
+            restoreMe.addClass('toDoItemDiv container-fluid');
 
             //Update the button id
             restoreMe.find("button").attr("id", "completeID");
