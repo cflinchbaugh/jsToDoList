@@ -2,6 +2,8 @@
 
 //Establish Local Storage
 function run(){
+    localToDoArray = [];
+
     if (Storage){  //(typeof(Storage) !== "undefined") {  //if (Storage !== void 0) {  //if (Storage)
         //ToDo List
         //get the ToDo items saved in localstorage
@@ -102,7 +104,7 @@ function addItem(toDoItem) {
     check.appendChild(completeButtonText);
 
     check.id = "completeID";
-    check.className = "col-xs-1";
+    check.className = "col-xs-2";
 
     //Create the list item and add the appropriate attributes
     listItem.className = "listClass col-xs-9";
